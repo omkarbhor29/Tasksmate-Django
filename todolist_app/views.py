@@ -35,6 +35,7 @@ def delete_task(request,task_id):
         
     return redirect('todolist')
 
+@login_required
 def edit_task(request,task_id):
     if request.method =="POST":
         task = Tasklist.objects.get(pk=task_id)
@@ -51,7 +52,7 @@ def edit_task(request,task_id):
 @login_required
 def complete_task(request,task_id):
     task = Tasklist.objects.get(pk=task_id)
-    if task.manage == request.user:
+    if task.manager == request.user:
         task.done = True
         task.save()
     else:
