@@ -35,7 +35,6 @@ def delete_task(request,task_id):
         
     return redirect('todolist')
 
-@login_required
 def edit_task(request,task_id):
     if request.method =="POST":
         task = Tasklist.objects.get(pk=task_id)
