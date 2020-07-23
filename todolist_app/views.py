@@ -28,7 +28,7 @@ def todolist(request):
 @login_required   
 def delete_task(request,task_id):
     task = Tasklist.objects.get(pk=task_id)
-    if task.manage == request.user:
+    if task.manager == request.user:
         task.delete()
     else:
         messages.error(request,("Access Restricted.You are Not Allowed!"))
