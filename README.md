@@ -1,6 +1,6 @@
 # Task-Mate
 
-Simple ToDo-list Task making app.Using this we can add our daily task in it.It also gives functionality such as creating, Deleting, Mark as Completed, Pending. Also it has compulsory login authority.
+Simple Todo-list Task making app.Using this we can add our daily task in it.It also gives functionality such as creating, Deleting, Mark as Completed, Pending. Also it has compulsory login authority.
 
 ![Home_page](https://user-images.githubusercontent.com/45947877/90953871-d9de4b80-e48c-11ea-97ab-ff09bd24ef9f.png)
 
